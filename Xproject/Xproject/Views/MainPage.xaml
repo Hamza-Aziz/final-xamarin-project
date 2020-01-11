@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xproject.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout VerticalOptions="Center" Padding="20">
+        <Label Text="Home Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+               
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="absence" Grid.Row="0"  Clicked="Absence_Clicked" Text="Absence" />
+
+            <Button x:Name="addStudent"   Grid.Row="1" Clicked="AddStudent_Clicked" Text="Add Student" />
+
+
+            <Button x:Name="newLesson"   Grid.Row="2" Clicked="NewLesson_Clicked"  Text="New Lesson" />
+
+
+            <Button x:Name="search" Grid.Row="3" Clicked="Search_Clicked"  Text="Search" />
+
+            <Button x:Name="logOut"  Grid.Row="4" Clicked="LogOut_Clicked"  Text="Log Out" />
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
